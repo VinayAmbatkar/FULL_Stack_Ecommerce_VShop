@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+*{margin: 0;padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-blue{
+  background: #1e90ff;
 }
+.headerWrapper .top-strip{padding: 8px 0px;}
+.headerWrapper .top-strip p{color:white; font-weight: bold; font-size: 12px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.headerWrapper .header{width: 100%; height: auto;padding: 10px 0px;}
+.logoWrapper img{width: 100%; height: auto; padding: 10px 0px;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.headerWrapper .header .part2 .countryDrop{text-align: left;justify-content:flex-start ;}
+.headerWrapper .header .part2 .countryDrop{width: 150px; height:60px; min-width: 150px;color:black ; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important;}
+.headerWrapper .header .part2 .countryDrop .label{font-size: 12px !important; text-transform: capitalize !important;color: black !important;}
+.headerWrapper .header .part2 .countryDrop .name{font-size: 14px !important; text-transform: capitalize !important;color: rgb(35, 33, 33) !important; font-weight: 700;}

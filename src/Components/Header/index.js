@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from '../../assets/images/logo.png';
-
+import { IoSearchSharp } from "react-icons/io5";
 import CountryDropdown from "./CountryDropdown";
+import { FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
 
@@ -14,7 +15,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header">
+        <header className="header">
           <div className="container">
             <div className="row">
               <div className="logoWrapper col-sm-2 d-flex align-items-center">
@@ -23,10 +24,22 @@ const Header = () => {
               <div className="col-sm-10 d-flex align-items-center part2">
                 <CountryDropdown />
 
+                {/* Heder Serach Starts Here */}
+
+<div className="headerSearch ml-3 mr-3">
+<input type="text" placeholder="Search for Products" />
+<button><IoSearchSharp /> </button>
+</div>
+                {/* Heder Serach EndHere */}
+
+<button>
+  <FaUserAlt />
+</button>
+
               </div>
             </div>
           </div>
-        </div>
+        </header>
       </div>
     </>
   )

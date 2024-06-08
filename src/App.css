@@ -5,6 +5,7 @@ body{
   font-size: 14px;
 }
 
+/* .container{max-width: 90%; margin: 0 auto; padding: 0 15px;} */
 .bg-blue{
   background: #1e90ff;
 }
@@ -15,13 +16,22 @@ body{
 .logoWrapper img{width: 100%; height: auto; padding: 10px 0px;}
 
 .headerWrapper .header .part2 .countryDrop{text-align: left;justify-content:flex-start ;}
-.headerWrapper .header .part2 .countryDrop{width: 150px; height:60px; min-width: 150px;color:black ; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important;}
+.headerWrapper .header .part2 .countryDrop{width: 170px; height:50px; min-width: 170px;color:black ; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important; padding: 10px 15px !important;}
 .headerWrapper .header .part2 .countryDrop .label{font-size: 12px !important; text-transform: capitalize !important;color: black !important; line-height: 16px;}
 .headerWrapper .header .part2 .countryDrop .name{font-size: 16px !important; text-transform: capitalize !important;color: rgb(14, 156, 233) !important; font-weight: 700; line-height: 16px;}
 .headerWrapper .header .part2 .countryDrop .span.ml-auto svg{opacity: 0.5;}
 
-header .headerSearch{width:60%; height:60px; background: #f3f4f7; padding: 10px 0px; position: relative;}
+header .headerSearch{width:60%; height:60px; background: #f3f4f7; padding: 10px 0px; position: relative; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
 header .headerSearch input{ background:transparent !important; outline: none !important; font-size: 14px;color: rgb(0, 0, 0);width: 100%; height: 45px; border: 0px !important;padding: 0px 20px !important; }
 header .headerSearch button{position: absolute; top: 10px;right: 10px; z-index: 100;min-width:40px !important; height: 40px !important; width: 40px !important;border-radius: 50% !important; color: black; border: 0px;}
 header .headerSearch button svg{font-size: 20px !important;}
 
+header .part3 .circle{align-items: center; justify-content: center;min-width: 45px !important;height:45px !important; width: 45px !important; border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1) !important; color: black; background-color: transparent;}
+header .part3 .circle svg{font-size: 18px !important;}
+.cartTab button{
+  background: #fff1ee !important;}
+
+  .cartTab button svg{ color: rgb(208, 0, 0) !important;}
+  .cartTab  .price{color: rgb(0, 0, 0) !important; font-size: 15px !important; font-weight: 400 !important;}
+
+  .cartTab .count{position: absolute;top: -6px; right: -4px; background: red; border-radius: 50%; color: white; width: 20px ; height: 20px;}

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from '../../assets/images/logo.png';
-import { IoSearchSharp } from "react-icons/io5";
 import CountryDropdown from "./CountryDropdown";
 import { FaRegUser } from "react-icons/fa";
 import { BsCart } from "react-icons/bs";
+// import { Search } from "@mui/icons-material";
+import Searchbox from "./SearchBox";
+import Navigation from "./Navigation";
 
 
 const Header = () => {
@@ -29,10 +31,7 @@ const Header = () => {
 
                 {/* Heder Serach Starts Here */}
 
-                <div className="headerSearch ml-3 mr-3">
-                  <input type="text" placeholder="Search for Products" />
-                  <button><IoSearchSharp /> </button>
-                </div>
+                <Searchbox />
                 {/* Heder Serach EndHere */}
                 <div className="part3 d-flex align-items-center ml-auto">
 
@@ -53,6 +52,7 @@ const Header = () => {
             </div>
           </div>
         </header>
+        <Navigation />
       </div>
     </>
   )

@@ -4,6 +4,9 @@ import { CgMenuRight } from "react-icons/cg";
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { IoHomeOutline } from "react-icons/io5";
+import { CiShop } from "react-icons/ci";
+import { RiContactsLine } from "react-icons/ri";
+import { FaBlog } from "react-icons/fa";
 
 const Navigation = () => {
   return (
@@ -20,15 +23,16 @@ const Navigation = () => {
           </Button>
         </div>
 
-        <div className="col-sm-9 navPart2 d-flex align-items-center">
+        <div className="col-sm-10 navPart2 d-flex align-items-center">
             <ul className='list list-inline ml-auto'>
                 <li className='list-inline-item'><Link to= '/'> <IoHomeOutline /> &nbsp; Home</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Shops</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Electronics</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Grocery</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Bakery</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Blog</Link></li>
-                <li className='list-inline-item'><Link to= '/'>Contact Us</Link></li>
+                <li className='list-inline-item'><Link to= '/'> <CiShop /> &nbsp; Shops</Link></li>
+                <li className='list-inline-item'><Link to= '/'> &nbsp;Electronics</Link></li>
+                <li className='list-inline-item'><Link to= '/'>&nbsp;Grocery</Link></li>
+                <li className='list-inline-item'><Link to= '/'>&nbsp;Bakery</Link></li>
+                <li className='list-inline-item'><Link to= '/'><FaBlog/>&nbsp; Blog</Link></li>
+                <li className='list-inline-item'><Link to= '/'><RiContactsLine />&nbsp; Contact Us</Link></li>
+                
             </ul>
         </div>
       </div>

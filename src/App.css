@@ -17,8 +17,11 @@ body{
   }
 }
 
-
-
+/* Designed Scrollbar  start */
+::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
+::-webkit-scrollbar-thumb{ background: #ccc;}
+::-webkit-scrollbar-track{background: transparent !important;}
+/* Designed Scrollbar End */
 
 .headerWrapper .top-strip{padding: 8px 0px;}
 .headerWrapper .top-strip p{color:white; font-weight: bold; font-size: 12px;}
@@ -32,10 +35,10 @@ body{
 .headerWrapper .header .part2 .countryDrop .name{font-size: 16px !important; text-transform: capitalize !important;color: rgb(14, 156, 233) !important; font-weight: 700; line-height: 16px;}
 .headerWrapper .header .part2 .countryDrop .span.ml-auto svg{opacity: 0.5;}
 
-header .headerSearch{width:210%; height:60px; background: #f3f4f7; padding: 10px 0px; position: relative; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
-header .headerSearch input{ background:transparent !important; outline: none !important; font-size: 14px;color: rgb(0, 0, 0);width: 100%; height: 45px; border: 0px !important;padding: 0px 20px !important; }
-header .headerSearch button{position: absolute; top: 10px;right: 10px; z-index: 100;min-width:40px !important; height: 40px !important; width: 40px !important;border-radius: 50% !important; color: black; border: 0px;}
-header .headerSearch button svg{font-size: 20px !important;}
+.headerSearch{width:210%; height:60px; background: #f3f4f7; padding: 10px 0px; position: relative; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
+.headerSearch input{ background:transparent !important; outline: none !important; font-size: 14px;color: rgb(0, 0, 0);width: 100%; height: 45px; border: 0px !important;padding: 0px 20px !important; }
+.headerSearch button{position: absolute; top: 10px;right: 10px; z-index: 100;min-width:40px !important; height: 40px !important; width: 40px !important;border-radius: 50% !important; color: black; border: 0px;}
+.headerSearch button svg{font-size: 20px !important; opacity: 0.5}
 
 header .part3 .circle{align-items: center; justify-content: center;min-width: 45px !important;height:45px !important; width: 45px !important; border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1) !important; color: black; background-color: transparent;}
 header .part3 .circle svg{font-size: 18px !important;}
@@ -47,7 +50,26 @@ header .part3 .circle svg{font-size: 18px !important;}
 
   .cartTab .count{position: absolute;top: -6px; right: -4px; background: red; border-radius: 50%; color: white; width: 20px ; height: 20px;}
 
-nav .allCatTab{ background: #2bbef9; padding: 10px 20px !important; border-radius: 30px;}
+/* location Model */
+
+.locationModal .MuiPaper-elevation{padding :30px;position: relative;}
+.locationModal .countrylist{margin: 0px; max-height: 400px;overflow-y: scroll;overflow-x: hidden;}
+.locationModal .countrylist li{ width: 100%;list-style: none;}
+.locationModal .countrylist button{ width: 100%;text-transform: uppercase; color: black; justify-content: flex-start; padding: 10px 20px !important;}
+.locationModal .closeb{position: absolute;top: 10px;right: 10px;color: black; min-width:40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important;}
+.locationModal .closeb svg{font-size: 22px;}
+/* LocationModel */
+
+
+
+
+
+
+
+nav .navPart1{max-width: 20%; flex: 0 0 20%;}
+nav .navPart2{max-width: 80%; flex: 0 0 80%;}
+
+nav .allCatTab{ background: #2bbef9; padding: 10px 15px !important; border-radius: 30px;}
 nav .allCatTab *{color: #fff;}
 nav .allCatTab:hover{background: #2bbef9 !important;}
 nav .allCatTab .text{ font-weight:600;}
@@ -55,5 +77,6 @@ nav .allCatTab .icon1 svg{font-size: 20px !important;}
 nav .allCatTab .icon2 svg{font-size: 15px !important;}
 
 nav .navPart2 ul{ margin-bottom: 0px;}
-nav .navPart2 ul li a{ font-size: 15px; color:rgb(0, 0, 0.8); font-weight: 500; padding: 10px 20px; text-transform: capitalize; display: flex; align-items: center; transition: all 0.2s ease-in-out; border-radius: 30px; text-decoration: none;}
+nav .navPart2 ul li a{ font-size: 15px; color:rgb(0, 0, 0.8); font-weight: 500; padding: 8px 15px; text-transform: capitalize; display: flex; align-items: center; transition: all 0.2s ease-in-out; border-radius: 30px; text-decoration: none; opacity: 0.7;}
 nav .navPart2 ul li a:hover{background-color: #f0faff; color: #2bbef9;}
+

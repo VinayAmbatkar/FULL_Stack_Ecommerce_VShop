@@ -25,13 +25,22 @@ const Navigation = () => {
 
         <div className="col-sm-10 navPart2 d-flex align-items-center">
             <ul className='list list-inline ml-auto'>
-                <li className='list-inline-item'><Link to= '/'> <IoHomeOutline /> &nbsp; Home</Link></li>
+                <li className='list-inline-item'><Link to= '/'> <IoHomeOutline /> &nbsp; Home</Link><div className="submenu shadow">
+                  <Link to= '/'> <CiShop /> &nbsp; New Arrivals</Link>
+                  <Link to= '/'> <CiShop /> &nbsp; Best Sellers</Link>
+                  <Link to= '/'> <CiShop /> &nbsp; Special Offers</Link>
+                  <Link to= '/'> <CiShop /> &nbsp; Trending</Link>
+                  <Link to= '/'> <CiShop /> &nbsp; Featured Products</Link>
+                  </div>
+                </li>
                 <li className='list-inline-item'><Link to= '/'> <CiShop /> &nbsp; Shops</Link></li>
                 <li className='list-inline-item'><Link to= '/'> &nbsp;Electronics</Link></li>
                 <li className='list-inline-item'><Link to= '/'>&nbsp;Grocery</Link></li>
                 <li className='list-inline-item'><Link to= '/'>&nbsp;Bakery</Link></li>
                 <li className='list-inline-item'><Link to= '/'><FaBlog/>&nbsp; Blog</Link></li>
                 <li className='list-inline-item'><Link to= '/'><RiContactsLine />&nbsp; Contact Us</Link></li>
+                <li className='list-inline-item'><Link to= '/'><RiContactsLine />&nbsp; Contact Us</Link></li>
+                
                 
             </ul>
         </div>

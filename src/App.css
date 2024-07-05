@@ -68,6 +68,22 @@ header .part3 .circle svg{font-size: 18px !important;}
 
 nav .navPart1{max-width: 20%; flex: 0 0 20%;}
 nav .navPart2{max-width: 80%; flex: 0 0 80%;}
+nav .navPart1 .catWrapper{position: relative;}
+nav .navPart1 .catWrapper .sidebarNav{width: 100%; height:0px;opacity: 0; background: #f0faff;position:absolute;top: 135%;left: 0px; border:
+   1px solid rgba(0, 0, 0, 0.2); padding: 15px 0px; transform: all 0.2s;visibility: hidden;}
+   nav .navPart1 .catWrapper .sidebarNav.open{height:auto;opacity: 1;visibility: inherit;}
+
+
+nav .navPart1 .catWrapper .sidebarNav ul li{width: 100%;list-style: none;padding:0px 15px;}
+nav .navPart1 .catWrapper .sidebarNav ul li button{color: #000;width: 100%; justify-content: flex-start;text-transform: uppercase !important;}
+nav .navPart1 .catWrapper .sidebarNav ul li button:hover{background: transparent !important;}
+
+
+
+
+
+
+
 
 nav .allCatTab{ background: #2bbef9; padding: 10px 15px !important; border-radius: 30px;}
 nav .allCatTab *{color: #fff;}

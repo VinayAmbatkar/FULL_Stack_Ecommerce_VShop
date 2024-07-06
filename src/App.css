@@ -104,8 +104,8 @@ nav .navPart2 ul li a{ font-size: 15px; color:rgb(0, 0, 0.8); font-weight: 500; 
 nav .navPart2 ul li a:hover{background-color: #f0faff; color: #2bbef9;}
 
 nav .navPart2 ul li{position: relative;}
-nav .navPart2 ul li .submenu{position:absolute; top: 150%;left: 0px; min-width: 200px; background: #fff; opacity: 2; visibility: hidden;transition: all 0.1s ease-in-out;z-index: 100;}
-nav .navPart2 ul li .submenu a{ display: block; width: 100%;}
+nav .navPart2 ul li .submenu{position:absolute; top: 150%;left: 0px; min-width: 200px; background: #fff; opacity: 2; visibility: hidden;transition: all 0.01s ease-in-out;z-index: 100;}
+nav .navPart2 ul li .submenu a{ display: block; width: 100%;opacity: 2; transition: all 0.01s ease-in-out;}
 /* nav .navPart2 ul li .submenu a button{ width: 100%;justify-content: flex-start !important;border-radius: 0px; font-weight: 600;} */
 nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 

@@ -1,5 +1,11 @@
 *{margin: 0;padding: 0; box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css');
+
+
 body{
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -27,7 +33,7 @@ body{
 .headerWrapper .top-strip p{color:white; font-weight: bold; font-size: 12px;}
 
 .headerWrapper .header{width: 100%; height: auto;padding: 25px 0px;}
-.logoWrapper img{width: 100%; height: auto; padding: 10px 0px;}
+.logoWrapper img{width: 90%; height: auto; padding: -14px 0px;}
 
 .headerWrapper .header .part2 .countryDrop{text-align: left;justify-content:flex-start ;}
 .headerWrapper .header .part2 .countryDrop{width: 170px; height:50px; min-width: 170px;color:black ; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important; padding: 10px 15px !important;}
@@ -70,7 +76,7 @@ nav .navPart1{max-width: 20%; flex: 0 0 20%;}
 nav .navPart2{max-width: 80%; flex: 0 0 80%;}
 nav .navPart1 .catWrapper{position: relative;}
 nav .navPart1 .catWrapper .sidebarNav{width: 100%; height:0px;opacity: 0; background: #f0faff;position:absolute;top: 135%;left: 0px; border:
-   1px solid rgba(0, 0, 0, 0.2); padding: 15px 0px; transform: all 0.2s;visibility: hidden;}
+   1px solid rgba(0, 0, 0, 0.2); padding: 15px 0px; transform: all 0.2s;visibility: hidden; z-index: 100;}
    nav .navPart1 .catWrapper .sidebarNav.open{height:auto;opacity: 1;visibility: inherit;}
 
 
@@ -98,7 +104,17 @@ nav .navPart2 ul li a{ font-size: 15px; color:rgb(0, 0, 0.8); font-weight: 500; 
 nav .navPart2 ul li a:hover{background-color: #f0faff; color: #2bbef9;}
 
 nav .navPart2 ul li{position: relative;}
-nav .navPart2 ul li .submenu{position:absolute; top: 150%;left: 0px; min-width: 200px; background: #fff; opacity: 2; visibility: hidden;transition: all 0.1s ease-in-out;}
+nav .navPart2 ul li .submenu{position:absolute; top: 150%;left: 0px; min-width: 200px; background: #fff; opacity: 2; visibility: hidden;transition: all 0.1s ease-in-out;z-index: 100;}
 nav .navPart2 ul li .submenu a{ display: block; width: 100%;}
 /* nav .navPart2 ul li .submenu a button{ width: 100%;justify-content: flex-start !important;border-radius: 0px; font-weight: 600;} */
 nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
+
+
+/* Banner top */
+.homeBannerSection{position: relative;overflow: hidden;}
+.homeBannerSection *{outline: none;}
+.homeBannerSection .slick-arrow{position: absolute; top: 45%;z-index: 100;display: flex;align-items: center;justify-content: center; width: 20px !important;height:20px !important; background: #000; border-radius: 100%; font-family:FontAwesome !important;}
+.homeBannerSection .slick-arrow.slick-next{right: 20px !important;}
+.homeBannerSection .slick-arrow.slick-prev{left: 20px !important;}
+
+.homeBannerSection .slick-arrow.slick-next ::before{font-family:FontAwesome !important;color: #f3f4f7;}

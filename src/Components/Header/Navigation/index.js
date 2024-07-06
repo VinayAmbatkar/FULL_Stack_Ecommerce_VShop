@@ -11,7 +11,7 @@ import { FaBlog } from "react-icons/fa";
 const Navigation = () => {
 
   // State to used to open and close sidebar
-  const[isOpenSidebarVal, setisOpenSidebarVal] = useState(true);
+  const[isOpenSidebarVal, setisOpenSidebarVal] = useState(false);
   return (
     <nav>
     <div className="container">
@@ -46,7 +46,7 @@ const Navigation = () => {
             <ul className='list list-inline ml-auto'>
                 <li className='list-inline-item'><Link to= '/'> <IoHomeOutline /> &nbsp; Home</Link>
                 <div className="submenu shadow">
-                  <Link to= '/'> <CiShop /> &nbsp; New Arrivals</Link>
+                  <Link to= '/'> <CiShop /> &nbsp; <Button>New Arrivals</Button> </Link>
                   <Link to= '/'> <CiShop /> &nbsp; Best Sellers</Link>
                   <Link to= '/'> <CiShop /> &nbsp; Special Offers</Link>
                   <Link to= '/'> <CiShop /> &nbsp; Trending</Link>

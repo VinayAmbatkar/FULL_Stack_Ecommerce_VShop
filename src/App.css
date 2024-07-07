@@ -23,6 +23,8 @@ body{
   }
 }
 
+.cursor{cursor: pointer;}
+
 /* Designed Scrollbar  start */
 ::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
 ::-webkit-scrollbar-thumb{ background: #ccc;}
@@ -33,7 +35,7 @@ body{
 .headerWrapper .top-strip p{color:white; font-weight: bold; font-size: 12px;}
 
 .headerWrapper .header{width: 100%; height: auto;padding: 25px 0px;}
-.logoWrapper img{width: 90%; height: auto; padding: -14px 0px;}
+.logoWrapper img{width: 90%; height: auto; padding: 10px 0px;}
 
 .headerWrapper .header .part2 .countryDrop{text-align: left;justify-content:flex-start ;}
 .headerWrapper .header .part2 .countryDrop{width: 170px; height:50px; min-width: 170px;color:black ; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important; padding: 10px 15px !important;}
@@ -75,18 +77,20 @@ header .part3 .circle svg{font-size: 18px !important;}
 nav .navPart1{max-width: 20%; flex: 0 0 20%;}
 nav .navPart2{max-width: 80%; flex: 0 0 80%;}
 nav .navPart1 .catWrapper{position: relative;}
-nav .navPart1 .catWrapper .sidebarNav{width: 100%; height:0px;opacity: 0; background: #f0faff;position:absolute;top: 135%;left: 0px; border:
+nav .navPart1 .catWrapper .sidebarNav{width: 100%; height:0px;opacity: 0; background: #fff;position:absolute;top: 135%;left: 0px; border:
    1px solid rgba(0, 0, 0, 0.2); padding: 15px 0px; transform: all 0.2s;visibility: hidden; z-index: 100;}
    nav .navPart1 .catWrapper .sidebarNav.open{height:auto;opacity: 1;visibility: inherit;}
 
 
-nav .navPart1 .catWrapper .sidebarNav ul li{width: 100%;list-style: none;padding:0px 15px;}
+nav .navPart1 .catWrapper .sidebarNav ul li{width: 100%;list-style: none; padding:0px 10px;}
 nav .navPart1 .catWrapper .sidebarNav ul li button{color: #000;width: 100%; justify-content: flex-start;text-transform: uppercase !important;}
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{background: transparent !important;}
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{font-size:12; opacity:0.6;}
 
-
-
-
+nav .navPart1 .catWrapper .sidebarNav ul li{position: static;}
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{position: absolute; left: 102%; width: 250px; height:100%; background: #fff; z-index: 100; opacity: 0;visibility: hidden; transition:all 0.2s ease-in-out; border-left: 1px solid rgb(0, 0, 0.1); padding: 20px;}
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu button{border-radius: 0px;}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{opacity: 1; visibility: inherit; top: 0px; left: 100%;}
 
 
 
@@ -118,3 +122,6 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 .homeBannerSection .slick-arrow.slick-prev{left: 20px !important;}
 
 .homeBannerSection .slick-arrow.slick-next ::before{font-family:FontAwesome !important;color: #f3f4f7;}
+
+.homeProducts{padding: 25px 0px;width: 100%;}
+.homeProducts .banner{width: 100%;  border-radius: 7px;overflow: hidden;}

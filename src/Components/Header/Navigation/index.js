@@ -7,6 +7,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { RiContactsLine } from "react-icons/ri";
 import { FaBlog } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Navigation = () => {
 
@@ -29,13 +30,64 @@ const Navigation = () => {
           <div className={`sidebarNav ${isOpenSidebarVal===true ?`open`:``}`}>
             <ul>
 
-            <li className='list-inline-item'><Link to= '/'><Button>Home</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'>  <Button>Shops</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'> <Button>Electronics</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'> <Button> Grocery</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'>  <Button>Bakery</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'><Button>Blog</Button></Link></li>
-            <li className='list-inline-item'><Link to= '/'><Button>Contact Us</Button> </Link></li>
+            <li className='list-inline-item'><Link to= '/'><Button>Men <FaAngleRight className='ml-auto' /></Button></Link>
+            <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div>
+            </li>
+            <li className='list-inline-item'><Link to= '/'>  <Button>Woman<FaAngleRight className='ml-auto' /></Button></Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
+            <li className='list-inline-item'><Link to= '/'> <Button>Beauty</Button></Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
+            <li className='list-inline-item'><Link to= '/'> <Button> Watches</Button></Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
+            <li className='list-inline-item'><Link to= '/'>  <Button>Kid</Button></Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
+            <li className='list-inline-item'><Link to= '/'><Button>Gift</Button></Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
+            <li className='list-inline-item'><Link to= '/'><Button>Bekary</Button> </Link> <div className="submenu">
+              <Link to= '/'> <Button> Clotting</Button> </Link>
+              <Link to= '/'> <Button> FootWear</Button> </Link>
+              <Link to= '/'> <Button> Watches</Button> </Link>
+              <Link to= '/'> <Button> Shoes</Button> </Link>
+              <Link to= '/'> <Button>Sun Glasses</Button> </Link>
+              <Link to= '/'> <Button>Inners</Button> </Link>
+            </div></li>
             
             </ul>
           </div>

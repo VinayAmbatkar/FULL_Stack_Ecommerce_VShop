@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
@@ -22,6 +23,7 @@
     "react-slick": "^0.30.2",
     "slick-slider": "^1.8.2",
     "styled-components": "^6.1.11",
+    "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

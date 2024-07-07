@@ -6,6 +6,7 @@ import { BsCart } from "react-icons/bs";
 // import { Search } from "@mui/icons-material";
 import Searchbox from "./SearchBox";
 import Navigation from "./Navigation";
+import { Button } from "@mui/material/Button";
 
 
 const Header = () => {

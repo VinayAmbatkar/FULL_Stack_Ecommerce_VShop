@@ -9,6 +9,7 @@
 body{
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  color: rgb(0, 0, 0.8);
 }
 
 
@@ -24,6 +25,8 @@ body{
 }
 
 .cursor{cursor: pointer;}
+.text-light{color:#acacad !important;}
+.text-sml{font-size: 14px;}
 
 /* Designed Scrollbar  start */
 ::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
@@ -125,3 +128,20 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 
 .homeProducts{padding: 25px 0px;width: 100%;}
 .homeProducts .banner{width: 100%;  border-radius: 7px;overflow: hidden;}
+
+.productRow .hd{font-size: 25px; font-weight: 500;}
+.viewAllBtn{padding:5px 25px !important;background: #fff; border: 2px solid rgba(0, 0, 0, 0.1); border-radius: 30px !important; color: #000 !important;font-weight: 600;}
+.viewAllBtn svg{font-size: 15px !important;}
+
+
+/* productsection */
+
+.productItem{width: 100%; height: auto; border: 1px solid rgb(0, 0,0, 0.1); cursor: pointer;}
+.productItem .info h4{ font-size: 15px; font-weight: 600;}
+.productItem  .info{padding: 15px}
+.productItem  .info .oldPrice{font-size: 15px;font-weight: bold; color: rgb(0, 0, 0.8); text-decoration: line-through;}
+.productItem  .info .netPrice{font-size: 15px;font-weight: bold; }
+
+
+
+/* productsection */

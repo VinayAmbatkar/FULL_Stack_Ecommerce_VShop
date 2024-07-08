@@ -8,6 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Rating from '@mui/material/Rating';
+import { SlSizeFullscreen } from "react-icons/sl";
+import ProductsItem from '../../Components/ProductsItems';
+import { FaRegHeart } from "react-icons/fa6";
 
 
 
@@ -17,7 +20,7 @@ const Home = () => {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1
     };
 
@@ -44,129 +47,155 @@ const Home = () => {
 
                                 <Button className='viewAllBtn ml-auto'>View All<FaArrowRightLong /></Button>
 
+
                             </div>
 
 
-                            <div className="product_row w-100 mt-4">
+                            <div className="product_row w-100 mt-4 display:flex">
                                 <Swiper
-                                    slidesPerView={3}
+                                    slidesPerView={4}
                                     spaceBetween={0}
 
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide><div className=" item productItem">
+
+
+                                    <SwiperSlide> <ProductsItem /></SwiperSlide>
+
+                                    {/* <SwiperSlide><ProductsItem /> </SwiperSlide>
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide> */}
+
+
+                                    {/* ------------------------------item 2--------------------- */}
+                                    <SwiperSlide>   <div className=" item productItem">
                                         <div className="imageWrapper">
                                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" className='w-100' />
+
+
+                                            <span className='badge badge-primary'>28%</span>
+                                            <div className="actions">
+
+                                                <Button><SlSizeFullscreen /></Button>
+                                                <Button><FaRegHeart style={{ fontSize: "20px" }} /></Button>
+                                            </div>
+
                                         </div>
                                         <div className="info">
-                                            
+
                                             <h4>All Natural Italian-Style Chicken Meatballs</h4>
                                             <span className='text-susses d-block'>In Stock</span>
                                             <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
+
                                             <div className="d-flex">
-                                                <span className='oldPrice'>230 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>230 Rs</span>
+                                                <span className='oldPrice'>400 Rs</span>
+                                                <span className='netPrice text-danger ml-3'>300Rs</span>
                                             </div>
+                                        </div>
+
+                                    </div> </SwiperSlide>
+
+                                     {/* ------------------------------item 3--------------------- */}
+
+                                     <SwiperSlide>   <div className=" item productItem">
+                                        <div className="imageWrapper">
+                                            <img src="https://754969b0.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg" className='w-100' />
+
+
+                                            <span className='badge badge-primary'>28%</span>
+                                            <div className="actions">
+
+                                                <Button><SlSizeFullscreen /></Button>
+                                                <Button><FaRegHeart style={{ fontSize: "20px" }} /></Button>
                                             </div>
 
-                                    </div></SwiperSlide>
-                                    <SwiperSlide><div className=" item productItem">
-                                        <div className="imageWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-56-346x310.jpg" className='w-100' />
                                         </div>
                                         <div className="info">
-                                            
-                                            <h4>Fresh Brown Coconut</h4>
+
+                                            <h4>Field Roast Chao Cheese Creamy Original</h4>
                                             <span className='text-susses d-block'>In Stock</span>
                                             <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
+
                                             <div className="d-flex">
-                                                <span className='oldPrice'>40 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>30Rs</span>
+                                                <span className='oldPrice'>120 Rs</span>
+                                                <span className='netPrice text-danger ml-3'>100s</span>
                                             </div>
+                                        </div>
+
+                                    </div> </SwiperSlide>
+
+                                    {/* ------------------------------item 4--------------------- */}
+
+                                    <SwiperSlide>   <div className=" item productItem">
+                                        <div className="imageWrapper">
+                                            <img src="https://754969b0.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-50-346x310.jpg" className='w-100' />
+
+
+                                            <span className='badge badge-primary'>28%</span>
+                                            <div className="actions">
+
+                                                <Button><SlSizeFullscreen /></Button>
+                                                <Button><FaRegHeart style={{ fontSize: "20px" }} /></Button>
                                             </div>
 
-                                    </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide><div className=" item productItem">
-                                        <div className="imageWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg" className='w-100' />
                                         </div>
                                         <div className="info">
-                                            
-                                            <h4>Blueberries – 1 Pint Package</h4>
+
+                                            <h4>Chobani Complete Vanilla Greek Yogurt</h4>
                                             <span className='text-susses d-block'>In Stock</span>
                                             <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
-                                            <div className="d-flex">
-                                                <span className='oldPrice'>200 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>180 Rs</span>
-                                            </div>
-                                            </div>
 
-                                    </div></SwiperSlide>
-                                    <SwiperSlide><div className=" item productItem">
-                                        <div className="imageWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" className='w-100' />
+                                            <div className="d-flex">
+                                                <span className='oldPrice'>120 Rs</span>
+                                                <span className='netPrice text-danger ml-3'>100s</span>
+                                            </div>
                                         </div>
-                                        <div className="info">
-                                            
-                                            <h4>All Natural Italian-Style Chicken Meatballs</h4>
-                                            <span className='text-susses d-block'>In Stock</span>
-                                            <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
-                                            <div className="d-flex">
-                                                <span className='oldPrice'>230 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>230 Rs</span>
-                                            </div>
-                                            </div>
 
-                                    </div></SwiperSlide>
-                                    
-                                    <SwiperSlide><div className=" item productItem">
-                                        <div className="imageWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" className='w-100' />
-                                        </div>
-                                        <div className="info">
-                                            
-                                            <h4>All Natural Italian-Style Chicken Meatballs</h4>
-                                            <span className='text-susses d-block'>In Stock</span>
-                                            <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
-                                            <div className="d-flex">
-                                                <span className='oldPrice'>230 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>230 Rs</span>
-                                            </div>
-                                            </div>
+                                    </div> </SwiperSlide>
 
-                                    </div></SwiperSlide>
-                                    <SwiperSlide><div className=" item productItem">
-                                        <div className="imageWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" className='w-100' />
-                                        </div>
-                                        <div className="info">
-                                            
-                                            <h4>All Natural Italian-Style Chicken Meatballs</h4>
-                                            <span className='text-susses d-block'>In Stock</span>
-                                            <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
-                                            
-                                            <div className="d-flex">
-                                                <span className='oldPrice'>230 Rs</span>
-                                                <span className='netPrice text-danger ml-3'>230 Rs</span>
-                                            </div>
-                                            </div>
-
-                                    </div></SwiperSlide>
-
-                                    
                                 </Swiper>
 
 
 
                             </div>
 
+
+
+                            {/* Best-seller section */}
+
+                            <div className="d-flex align-items-center mt-5">
+                                <div className="info">
+                                    <h3 className='mb-0 hd'>NEW PRODUCTS</h3>
+                                    <p className='text-light text-sml mb-0'>New Fresh Products in your Local Areas </p>
+
+                                </div>
+
+                                <Button className='viewAllBtn ml-auto'>View All<FaArrowRightLong /></Button>
+
+
+                            </div>
+
+
+                            <div className="product_row w-100 mt-4">
+                                <Swiper
+                                    slidesPerView={4}
+                                    spaceBetween={0}
+
+                                    modules={[Navigation]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+
+
+                                </Swiper>
+
+
+
+                            </div>
 
 
                         </div>

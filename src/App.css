@@ -120,14 +120,16 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 /* Banner top */
 .homeBannerSection{position: relative;overflow: hidden;}
 .homeBannerSection *{outline: none;}
-.homeBannerSection .slick-arrow{position: absolute; top: 45%;z-index: 100;display: flex;align-items: center;justify-content: center; width: 20px !important;height:20px !important; background: #000; border-radius: 100%; font-family:FontAwesome !important; font-weight: bold; box-shadow: 0 1px 3px rgb(0 0 0 /24%),0 1px 2px rgb(0 0 0 /24%) !important;}
+.homeBannerSection .slick-arrow{position: absolute; top: 45%;z-index: 100;display: flex;align-items: center;justify-content: center; width: 20px !important;height:20px !important; background: #000; border-radius: 100%; font-family:FontAwesome !important; font-weight: bold; box-shadow: 0 1px 3px rgb(0 0 0 /24%),0 1px 2px rgb(0 0 0 /24%) !important; }
 .homeBannerSection .slick-arrow.slick-next{right: 20px !important;}
 .homeBannerSection .slick-arrow.slick-prev{left: 20px !important;}
 
-.homeBannerSection .slick-arrow.slick-next ::before{font-family:FontAwesome !important;color: #f3f4f7;}
+/* .homeBannerSection .slick-arrow.slick-next::before{font-family:FontAwesome !important;color: #f3f4f7;} */
+.homeBannerSection .slick-arrow.slick-next::before{content: "\f105"; font-family: FontAwesome;}
+.homeBannerSection .slick-arrow.slick-arrow.slick-prev::before{content: "\f104"; font-family: FontAwesome; color: #f3f4f7; }
 
 .homeProducts{padding: 25px 0px;width: 100%;}
-.homeProducts .banner{width: 100%;  border-radius: 7px;overflow: hidden;}
+.homeProducts .banner{width: 100%;  border-radius:7px;overflow: hidden;background:          ;}
 
 .productRow .hd{font-size: 22px; font-weight: 500;}
 .viewAllBtn{padding:5px 25px !important;background: #fff; border: 2px solid rgba(0, 0, 0, 0.1); border-radius: 30px !important; color: #000 !important;font-weight: 600;}
@@ -154,8 +156,8 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 .product_row .item{ border-right: 1px solid transparent !important;}
 .product_row .swiper-slide:last-child.productItem{border: 1px solid rgb(0, 0,0, 0.1);}
 .swiper{padding-right: 1px !important;}
-
-
+.homeCat .swiper-button-prev::after{content: "\f104"; font-family: FontAwesome;color: #000;}
+.homeCat .swiper-button-next::after{content: "\f105"; font-family: FontAwesome;color: #000;}
 .productItem .actions button:hover{background: #233a95 ;}
 .productItem .actions button:hover svg{color: #fff;}  
 
@@ -164,3 +166,18 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 .productItem:hover .imageWrapper img{ transition: all 0.3s ease-in-out;}
 .productItem:hover .imageWrapper:hover img{transform: scale(1.1);}
 /* productsection */
+
+
+
+/* Categories block */
+.homeCat{padding: 25px 0px;}
+.homeCat .swiper .item{ padding: 15px;  width: 100%; height: auto; background: #feefea; border-radius: 10px;}
+.homeCat .swiper .item img{width: 80%; height: auto;}
+.homeCat .swiper{overflow: inherit !important;}
+.homeCat .swiper-button-prev, .homeCat .swiper-button-next{top: -10px !important; width: 20px !important; height: 20px !important;box-shadow: 0 1px 3px rgb(0 0 0 /24%),0 1px 2px rgb(0 0 0 /24%) !important; background: #fff !important; border-radius: 50% !important; z-index: 1000 !important;}
+.homeCat .swiper-button-prev{right: 43px !important; left: inherit !important;}
+
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{font-family: FontAwesome !important; font-size: 25px !important; color: #000;}
+/* Categories block */ 
+
+

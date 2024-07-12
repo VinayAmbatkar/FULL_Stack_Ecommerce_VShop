@@ -11,6 +11,8 @@ import Rating from '@mui/material/Rating';
 import { SlSizeFullscreen } from "react-icons/sl";
 import ProductsItem from '../../Components/ProductsItems';
 import { FaRegHeart } from "react-icons/fa6";
+import Banner2 from '../../assets/images/Banners/banner2.jpg';
+import HomeCat from '../../Components/HomeCat';
 
 
 
@@ -28,15 +30,31 @@ const Home = () => {
         <>
             <HomeBanner />
 
+            {/* category section blocks  */}
+
+            <HomeCat />
+
+            {/* category section blocks ENds  */}
+
+
+
+
+
+
             <div className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="banner">
                                 <img src={slideBanner2} className='cursor w-100' />
+                            </div>
+                            <div className="banner mt-4">
+
+                                <img src={Banner2} className='cursor w-100' />
 
                             </div>
                         </div>
+
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-items-center">
                                 <div className="info">
@@ -55,7 +73,7 @@ const Home = () => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={0}
-
+                                    // navigation={true}
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
@@ -96,9 +114,9 @@ const Home = () => {
 
                                     </div> </SwiperSlide>
 
-                                     {/* ------------------------------item 3--------------------- */}
+                                    {/* ------------------------------item 3--------------------- */}
 
-                                     <SwiperSlide>   <div className=" item productItem">
+                                    <SwiperSlide>   <div className=" item productItem">
                                         <div className="imageWrapper">
                                             <img src="https://754969b0.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg" className='w-100' />
 
@@ -124,6 +142,7 @@ const Home = () => {
                                         </div>
 
                                     </div> </SwiperSlide>
+                                    
 
                                     {/* ------------------------------item 4--------------------- */}
 

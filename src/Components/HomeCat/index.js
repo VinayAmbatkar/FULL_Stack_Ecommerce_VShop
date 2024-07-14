@@ -5,15 +5,15 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
 const HomeCat = () => {
-    
-    
+
+
     return (
 
         <section>
 
             <div className="homeCat">
-                <div className="container mt-2">
-<h3 className='mb-3 hd'>Features Categories</h3>
+                <div className="container mt-2 cursor">
+                    <h3 className='mb-3 hd'>Features Categories</h3>
                     <Swiper
                         slidesPerView={7}
                         spaceBetween={5}

@@ -13,6 +13,7 @@ import ProductsItem from '../../Components/ProductsItems';
 import { FaRegHeart } from "react-icons/fa6";
 import Banner2 from '../../assets/images/Banners/banner2.jpg';
 import HomeCat from '../../Components/HomeCat';
+import banner3 from '../../assets/images/Banners/Banner3.png'
 
 
 
@@ -45,14 +46,19 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="banner">
-                                <img src={slideBanner2} className='cursor w-100' />
-                            </div>
-                            <div className="banner mt-4">
 
-                                <img src={Banner2} className='cursor w-100' />
+                            <div className="sticky">
+                                <div className="banner">
+                                    <img src={slideBanner2} className='cursor w-100' />
+                                </div>
+                                <div className="banner mt-4">
 
+                                    <img src={Banner2} className='cursor w-100' />
+
+                                </div>
                             </div>
+
+
                         </div>
 
                         <div className="col-md-9 productRow">
@@ -142,7 +148,7 @@ const Home = () => {
                                         </div>
 
                                     </div> </SwiperSlide>
-                                    
+
 
                                     {/* ------------------------------item 4--------------------- */}
 
@@ -196,26 +202,31 @@ const Home = () => {
                             </div>
 
 
-                            <div className="product_row w-100 mt-4">
-                                <Swiper
-                                    slidesPerView={4}
-                                    spaceBetween={0}
-
-                                    modules={[Navigation]}
-                                    className="mySwiper"
-                                >
-                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
-                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
-                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
-                                    <SwiperSlide><ProductsItem /> </SwiperSlide>
+                            <div className="productRow2 w-100 mt-4 d-flex">
 
 
-                                </Swiper>
-
+                                <ProductsItem />
+                                <ProductsItem />
+                                <ProductsItem />
+                                <ProductsItem />
+                                <ProductsItem />
+                                <ProductsItem />
 
 
                             </div>
 
+                           
+                            <div className="d-flex mb-4 mb-5 bannerSection">
+                                <div className="banner">
+
+                                    <img src={banner3} alt="" />
+                                </div>
+
+                                <div className="banner">
+
+                                    <img src={banner3} alt="" />
+                                </div>
+                            </div>
 
                         </div>
                     </div>

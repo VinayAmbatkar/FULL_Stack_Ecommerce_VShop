@@ -14,6 +14,8 @@ import { FaRegHeart } from "react-icons/fa6";
 import Banner2 from '../../assets/images/Banners/banner2.jpg';
 import HomeCat from '../../Components/HomeCat';
 import banner3 from '../../assets/images/Banners/Banner3.png'
+import Coupan from '../../assets/images/Coupon.png'
+import { BsBell } from "react-icons/bs";
 
 
 
@@ -42,7 +44,7 @@ const Home = () => {
 
 
 
-            <div className="homeProducts">
+            <section className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
@@ -62,9 +64,9 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-9 productRow">
-                            
 
-                              <div className="d-flex align-items-center">
+
+                            <div className="d-flex align-items-center">
                                 <div className="info">
                                     <h3 className='mb-0 hd'>BEST SELLERS</h3>
                                     <p className='text-light text-sml mb-0'>Do not Miss the current offers until the End of Month</p>
@@ -302,7 +304,31 @@ const Home = () => {
                 </div>
 
 
-            </div>
+            </section>
+
+
+            <section className='newsLatterSection mt-3 mb-3 d-flex align-items-center'>
+                <div className="container">
+                    <div className="row">
+
+                        <div className="col-md-6">
+                            <p className='text-white mb-0'>20% Discount for Your First Order </p>
+                            <h3>Join our E-commerce Platform for Daily Updated In your Area </h3>
+                            <p className='text-light'>Join our email subscription now to get updates<br /> on promotions and coupons</p>
+
+                        </div>
+                        <div className="col-md-6">
+                            <img src={Coupan} alt="" />
+                        </div>
+                    </div>
+                    <form>
+                    <BsBell />
+                        <input type="text" />
+                        <Button>Subscribe</Button>
+                    </form>
+
+                </div>
+            </section>
         </>
     )
 }

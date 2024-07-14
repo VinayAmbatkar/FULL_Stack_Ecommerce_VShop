@@ -62,7 +62,9 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-9 productRow">
-                            <div className="d-flex align-items-center">
+                            
+
+                              <div className="d-flex align-items-center">
                                 <div className="info">
                                     <h3 className='mb-0 hd'>BEST SELLERS</h3>
                                     <p className='text-light text-sml mb-0'>Do not Miss the current offers until the End of Month</p>
@@ -79,7 +81,7 @@ const Home = () => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={0}
-                                    // navigation={true}
+                                    navigation={true}
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
@@ -179,6 +181,63 @@ const Home = () => {
 
                                     </div> </SwiperSlide>
 
+                                    {/* ------------------------------item 4--------------------- */}
+
+                                    <SwiperSlide>   <div className=" item productItem">
+                                        <div className="imageWrapper">
+                                            <img src="https://754969b0.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-50-346x310.jpg" className='w-100' />
+
+
+                                            <span className='badge badge-primary'>28%</span>
+                                            <div className="actions">
+
+                                                <Button><SlSizeFullscreen /></Button>
+                                                <Button><FaRegHeart style={{ fontSize: "20px" }} /></Button>
+                                            </div>
+
+                                        </div>
+                                        <div className="info">
+
+                                            <h4>Chobani Complete Vanilla Greek Yogurt</h4>
+                                            <span className='text-susses d-block'>In Stock</span>
+                                            <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
+
+                                            <div className="d-flex">
+                                                <span className='oldPrice'>120 Rs</span>
+                                                <span className='netPrice text-danger ml-3'>100s</span>
+                                            </div>
+                                        </div>
+
+                                    </div> </SwiperSlide>
+                                    {/* ------------------------------item 4--------------------- */}
+
+                                    <SwiperSlide>   <div className=" item productItem">
+                                        <div className="imageWrapper">
+                                            <img src="https://754969b0.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-50-346x310.jpg" className='w-100' />
+
+
+                                            <span className='badge badge-primary'>28%</span>
+                                            <div className="actions">
+
+                                                <Button><SlSizeFullscreen /></Button>
+                                                <Button><FaRegHeart style={{ fontSize: "20px" }} /></Button>
+                                            </div>
+
+                                        </div>
+                                        <div className="info">
+
+                                            <h4>Chobani Complete Vanilla Greek Yogurt</h4>
+                                            <span className='text-susses d-block'>In Stock</span>
+                                            <Rating className='mt-2 mb-2 ' name="read-only" value={5} readOnly size='small' precision={0.5} />
+
+                                            <div className="d-flex">
+                                                <span className='oldPrice'>120 Rs</span>
+                                                <span className='netPrice text-danger ml-3'>100s</span>
+                                            </div>
+                                        </div>
+
+                                    </div> </SwiperSlide>
+
                                 </Swiper>
 
 
@@ -208,21 +267,30 @@ const Home = () => {
                                 <ProductsItem />
                                 <ProductsItem />
                                 <ProductsItem />
-                                <ProductsItem />
-                                <ProductsItem />
-                                <ProductsItem />
+
 
 
                             </div>
 
-                           
+                            <div className="productRow2 w-100 mt-4 d-flex">
+
+
+                                <ProductsItem />
+                                <ProductsItem />
+                                <ProductsItem />
+
+
+
+                            </div>
+
+
                             <div className="d-flex mb-4 mb-5 bannerSection">
-                                <div className="banner">
+                                <div className="banner mt-4">
 
                                     <img src={banner3} alt="" />
                                 </div>
 
-                                <div className="banner">
+                                <div className="banner mt-4">
 
                                     <img src={banner3} alt="" />
                                 </div>

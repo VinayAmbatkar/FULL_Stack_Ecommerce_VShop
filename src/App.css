@@ -183,13 +183,18 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 
 
 /* New Product */
-.productRow2 {flex-wrap: wrap;overflow: hidden;}
+.productRow2 {overflow: hidden;}
 
-.productRow2 .productItem{width:33%;overflow-x: hidden;border-right: 1px solid rgba(0, 0, 0, 0.1) !important;}
+.productRow2 .productItem{width:100%;overflow-x: hidden;border-right: 1px solid rgba(0, 0, 0, 0.1) !important;}
 
+
+/* .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+} */
 
 
 /* New Products  */
 
 .bannerSection{gap: 10px;}
 .sticky{position: sticky; top: 10px; z-index: 100;}
+

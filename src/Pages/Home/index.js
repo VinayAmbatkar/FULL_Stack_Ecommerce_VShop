@@ -323,7 +323,7 @@ const Home = () => {
                     </div>
                     <form>
                     <BsBell />
-                        <input type="text" />
+                        <input type="text" placeholder='Enter Your Email Address ' />
                         <Button>Subscribe</Button>
                     </form>
 
@@ -332,7 +332,7 @@ const Home = () => {
 
             
 
-            
+
         </>
     )
 }

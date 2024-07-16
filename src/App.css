@@ -208,7 +208,7 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 .newsLatterSection form svg{position: absolute; top: 30px; left: 13px; transform: translateY(-50%); font-size: 20px;}
 .newsLatterSection form input{width: 100%; height: 100%; border: 0px; outline: none !important; padding-left: 40px; padding-right: 200px; color: #000;}
 .newsLatterSection form button{position: absolute; top: 7px; right: 10px; background: purple; font-size: 16px; padding: 10px 25px; color: #f0faff;}
-.newsLatterSection form button:hover{background: #2bbef9;}
+.newsLatterSection form button:hover{background: purple;}
 
 
 
@@ -216,15 +216,19 @@ nav .navPart2 ul li:hover .submenu{opacity: 1; visibility: inherit; top:100%;}
 /* Footer */
 
 footer{width: 100%; height:500px; margin: auto; background: #f0faff; padding: 25px 0px;}
-
+footer .topInfo .col{ padding: 10px 15px  ;padding-left: 10px; border-right:1px solid rgba(0, 0, 0, 0.3);}
 footer .topInfo .col svg{font-size: 14px; }
-footer .topInfo .col span{font-size: 14px; }
+footer .topInfo .col span{font-size: 14px; font-weight: 600; }
+footer .topInfo{border-bottom: 1px solid rgb(0, 0, 0,0.2)  ; padding-bottom: 20px;}
+footer .topInfo .col:last-child{border-right: 0px;}
+footer .topInfo .col h4{font-size: 18px; font-weight: 600; margin: 20px 0px;}
 
-
-
-
-
-
-
-
+.linksWrap h5{font-size: 15px !important; font-weight: bold;}
+.linksWrap ul li{list-style: none; margin-bottom: 10px;}
+.linksWrap ul li a{color: #71778e; font-size: 13px; text-decoration: none;cursor: pointer;}
+.linksWrap ul li a:hover{text-decoration: none;}
+.copyright ul li a{ display: flex; align-items: center;justify-content: center; width: 40px; height: 40px;border-radius: 50% ; border:1px solid rgb(0, 0, 0,0.1) ; transition: all 0.3s;}
+.copyright ul li a svg{ font-size: 15px; color: rgb(0, 0, 0,0.8); cursor: pointer;}
+.copyright ul li a:hover{background: #f0faff; cursor: pointer;}
+.copyright ul li a:hover svg{color: #2bbef9; cursor: pointer;}
 /* Footer */
